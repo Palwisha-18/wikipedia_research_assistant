@@ -22,7 +22,7 @@ from langchain_mcp_adapters.tools import load_mcp_tools
 load_dotenv()
 
 base_url = os.getenv("BASE_URL", "http://localhost:8000")
-openai_api_key = None # os.getenv("API_KEY")
+openai_api_key = os.getenv("API_KEY")
 gemini_api_key = os.getenv("GOOGLE_API_KEY")
 
 
